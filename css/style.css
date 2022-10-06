@@ -36,7 +36,7 @@
  }
  body{
      min-height: 100vh;
-     background-image: url("file:///C:/Users/eleni/Desktop/elenikolliniati.github.io.git/img/25550.png");
+     background-image: linear-gradient(to bottom right, #040720,#040720);
      background-repeat: no-repeat;
      background-attachment: fixed;
      font-size: 16px;
