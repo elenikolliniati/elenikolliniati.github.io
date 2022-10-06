@@ -9,10 +9,23 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
 
-
     <body>
+    <!---Page-Loader-Start-->
+    <div class="page-loader">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <!---Page-Loader-End-->
+
+    <!---Overlay-Start-->
+    <div class="overlay">
+    </div>
+    <!---Overlay-End-->
+
+
     <!---Main-Start-->
-        <div class="main">
+        <div class="main hidden">
 
         <!---Header-Start-->
         <header class="header">
@@ -37,38 +50,34 @@
         <!---Header-End-->
 
         <!---Home-Section-Start-->
-
-        <!---Home-Section-Start-->
-            <section class="home-section align-items-center active">
+            <section class="home-section align-items-center" id="home">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="home-text">
                         <p>Hi! I'm</p>
                         <h1>Eleni Kolliniati</h1>
                         <h2>Data Scientist</h2>
-                        <a href="#" class="btn">More about me</a>
-                        <a href="#" class="btn">Portfolio</a>
+                        <a href="#about" class="btn link-item">More about me</a>
+                        <a href="#portfolio" class="btn link-item">Portfolio</a>
                     </div>
                     <div class="home-img">
                         <div class="img-box">
                             <img src="img/profile.png" alt="profile-img">
                         </div>
                     </div>
+                    </div>
                 </div>
             </section>
-        
         <!---Home-Section-End-->
 
         <!---About-Section-Start-->
-        <section class="about-section sec-padding">
+        <section class="about-section sec-padding" id="about">
             <div class="container">
-
                 <div class="row">
                     <div class="section-title">
                         <h2>About me</h2>
                     </div>
                 </div>
-
                 <div class="row">
                     <div class="about-img">
                         <div class="img-box">
@@ -77,6 +86,11 @@
                       </div>
                     <div class="about-text">
                     <p style="text-align: justify;">Having concluded my studies as a chemist in the university of Athens, I am currently completing my Msc regarding hydrogen production from water. Some years ago, I started programming and I enrolled in several courses, realizing this was my passion. In order to pursue a career in data, I attended Big Blue's data science bootcamp. This program helped me understand in depth the concepts of Machine Learning and also handle various real-life projects. My hobbies include playing bridge, a team sport that keeps me focused under pressure and refines my problem solving skills and my logical way of thinking. I believe that my enthusiasm, my agile way of handling tasks, as well as my diversified knowledge makes me a valuable asset in companies that want to thrive. </p>
+                    <h3>Follow me</h3>
+                            <div class="social-links">
+                                <a href="https://www.linkedin.com/in/eleni-kolliniati/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://github.com/elenikolliniati?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
                     <h3>skills</h3>
                     <div class="skills">
                         <div class="skill-item">python</div>
@@ -98,7 +112,7 @@
                     </div>
 
                     <!---Education-Start-->
-                    <div class="tab-content" id="education">
+                    <div class="tab-content active" id="education">
                         <div class="timeline">
                             <div class="timeline-item">
                                 <span class="data">2022</span>
@@ -140,19 +154,20 @@
                         </div>
                     </div>
                     <!---Education-End-->
-                    <a href="#" class="btn">download cv</a>
-                    <a href="#" class="btn">contact me</a>
+                    <a href="cv.pdf" target="_blank" class="btn">download cv</a>
+                    <a href="#contact" class="btn link-item ">contact me</a>
+                </div>
                 </div>
             </div>
         </section>
         <!---About-Section-End-->
 
         <!---Portfolio-Section-Start-->
-        <section class="portfolio-section sec-padding">
+        <section class="portfolio-section sec-padding" id="portfolio">
             <div class="container">
                 <div class="row">
                     <div class="section-title">
-                        <h2>recent work</h2>
+                        <h2>projects</h2>
                     </div>
                 </div>
                 <div class="row">
@@ -228,7 +243,7 @@
         <!---Portfolio-Section-End-->
 
         <!---Contact-Section-Start-->
-        <section class="contact-section sec-padding">
+        <section class="contact-section sec-padding" id="contact">
             <div class="container">
                 <div class="row">
                     <div class="section-title">
@@ -301,7 +316,7 @@
     </div>
     <!---Portfolio-Item-Details-Popup-End-->
 
-    <script src="js/script.js"> </script>
+    <script src="js/script.js"></script>
     </body>
 
 </html>
